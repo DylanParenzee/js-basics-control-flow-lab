@@ -15,10 +15,22 @@ else if(distance > 2000){
 }
 
 function ternaryCheckCity(city){
-city = "NYC" ? 'Ok, sounds good' : 'No go.'
+ return city === 'NYC' ? "Ok, sounds good.": 'No go.';
+ 
  
 }
 
-function switchOnCharmFromTip(){
-  // Write your code here!
+function switchOnCharmFromTip(tip){
+  
+  switch(tip){
+    case 'generous': 
+   
+    return 'Thank you so much.'
+    break;
+    case 'not as generous':
+      return 'Thank you.'
+      break;
+     default:
+       return `Bye.` 
+  }
 }
